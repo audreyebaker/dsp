@@ -48,13 +48,13 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I had previously installed Python 3 for an edX course.
 
 ### Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I would open the Python interpreter and look at the 'About' section, where the version of Python should be listed. I'm guessing this isn't the most efficient route, though.
 
  
 
