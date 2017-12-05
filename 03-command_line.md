@@ -19,22 +19,30 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+Commands | What They Do
+-----------------------
+*pwd* | show current working directory path
+*mkdir* | create a directory
+*rm* | delete a directory or file
+*rm -r* | delete a directory and all its child directories
+*touch* | create a file
+*ls* | list files and directories in working directory
+*cp* | copies files or directories
+*mv* | moves files or directories
 
 ---
 
 ### Q2.  List Files in Unix   
 
 What do the following commands do:  
-`ls`  
-`ls -a`  
-`ls -l`  
-`ls -lh`  
-`ls -lah`  
-`ls -t`  
-`ls -Glp`  
+`ls`  lists the files in the working directory
+`ls -a`  lists files in the working directory, including hidden files
+`ls -l`  lists files in the working directory in long form
+`ls -lh`  lists files in the working directory in long form with readable file size
+`ls -lah`  lists files in the working directory in long form with readable file size, including hidden files
+`ls -t`  lists files in the working directory in order of most recently modified
+`ls -Glp`  lists files in the working directory in long form, exluding the owner name, displaying directories with /
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
 
 ---
 
@@ -42,7 +50,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+* -R to display all subdirectories
+* -r to display in reverse order
+* -1 to display each entry on a line
+* -c to display files by file timestamp
+* -q to display all non-printing characters as ?
 
 ---
 
@@ -50,7 +62,7 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+Xargs converts standard input into arguments.
 
  
 
