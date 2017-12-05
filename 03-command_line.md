@@ -62,7 +62,7 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-Xargs converts standard input into arguments.
+Xargs converts standard input into arguments. To give an example, you might use this when you're using a command that *only* takes arguments, not standard input, such as *echo* or *cp*.
 
  
 
