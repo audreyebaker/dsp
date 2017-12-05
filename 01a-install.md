@@ -54,7 +54,7 @@ I had previously installed Python 3 for an edX course.
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
-I would open the Python interpreter and look at the 'About' section, where the version of Python should be listed. I'm guessing this isn't the most efficient route, though.
+I would open the command line and type: python --version
 
  
 
