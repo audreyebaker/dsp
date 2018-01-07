@@ -64,6 +64,13 @@ doubles = {(x \times 2) for x in numbers}
 print(doubles)
 {2, 2, 4, 6}
 
+[Dictionary Comprehension]
+dictionary = {0:1, 1:1, 2:2, 3:3}
+
+doubles = {k:v \times 2 for (k,v) in dictionary.items()}
+print(doubles)
+{0: 2, 1: 2, 2: 4, 3: 6}
+
 ### Evens 
 
 [Filter]
@@ -80,6 +87,13 @@ print(evens)
 evens = {x in numbers if (x%2==0)}
 print(evens)
 {2}
+
+[Dictionary Comprehension]
+dictionary = {0:1, 1:1, 2:2, 3:3}
+
+evens = {k:v for (k,v) in dictionary.items() if (v%2==0)}
+print(evens)
+{2: 2}
 
 ---
 
