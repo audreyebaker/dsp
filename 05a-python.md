@@ -49,31 +49,35 @@ Examples below using the following list
 numbers = \[1, 1, 2, 3]
 
 ### Doubles
-[Map]
-doubles = map(lambda x: x \times 2, numbers)
+_*Map*_
+
+doubles = map(lambda x: x * 2, numbers)
 
 print(doubles)
 
-\[2, 2, 4, 6]
+[2, 2, 4, 6]
 
-[List Comprehension]
-doubles = \[(x \times 2) for x in numbers]
+
+_*List Comprehension*_
+
+doubles = [(x * 2) for x in numbers]
 
 print(doubles)
 
-\[2, 2, 4, 6]
+[2, 2, 4, 6]
 
-[Set Comprehension]
-doubles = {(x \times 2) for x in numbers}
+_*Set Comprehension*_
+
+doubles = {(x * 2) for x in numbers}
 
 print(doubles)
 
 {2, 2, 4, 6}
 
-[Dictionary Comprehension]
+_*Dictionary Comprehension*_
 dictionary = {0:1, 1:1, 2:2, 3:3}
 
-doubles = {k:v \times 2 for (k,v) in dictionary.items()}
+doubles = {k:v * 2 for (k,v) in dictionary.items()}
 
 print(doubles)
 
@@ -81,28 +85,28 @@ print(doubles)
 
 ### Evens 
 
-[Filter]
+_*Filter*_
 evens = filter(lambda x: x%2==0, numbers)
 
 print(evens)
 
-\[2]
+[2]
 
-[Set Comprehension]
-evens = \[x in numbers if (x%2==0)]
+_*Set Comprehension*_
+evens = [x in numbers if (x%2==0)]
 
 print(evens)
 
-\[2]
+[2]
 
-[List Comprehension]
+_*List Comprehension*_
 evens = {x in numbers if (x%2==0)}
 
 print(evens)
 
 {2}
 
-[Dictionary Comprehension]
+_*Dictionary Comprehension*_
 dictionary = {0:1, 1:1, 2:2, 3:3}
 
 evens = {k:v for (k,v) in dictionary.items() if (v%2==0)}
