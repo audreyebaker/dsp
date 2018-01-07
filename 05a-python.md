@@ -12,7 +12,9 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> Temp change for git practice
+Lists and tuples are both sequences of values of any type that can be indexed, sliced, and iterated over. The main difference between the two is that lists are mutable whereas tuples are immutable. 
+
+Tuples work well as keys in dictionaries because they are immutable and therefore do not risk creating complications with hash values in the same way that a list might if changed after assigned as the keys in a dictionary.
 
 ---
 
@@ -20,7 +22,10 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Lists and sets both contain sequences of values of any type. Lists can be indexed, sliced, and iterated over, whereas sets cannot. Lists are also ordered whereas sets are not. Sets, on the other hand, include only unique values while lists may include duplicates.
+
+Sets are better for finding an element because you do not have to iterate over each element, as you do in a list. Instead, sets use the hash value to check if an element is included.
+
 
 ---
 
@@ -28,7 +33,9 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Lambda is an anonymous function that can be used only where it is called/defined.
+
+Example: sorted(x, key = lambda x:x\[0])
 
 ---
 
@@ -36,7 +43,43 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+List comprehensions are a substitute for lambda, map, and filter functions that use a syntax that mimics the mathematical notation for working with sets. 
+
+Examples below using the following list
+numbers = \[1, 1, 2, 3]
+
+### Doubles
+[Map]
+doubles = map(lambda x: x \times 2, numbers)
+print(doubles)
+\[2, 2, 4, 6]
+
+[List Comprehension]
+doubles = \[(x \times 2) for x in numbers]
+print(doubles)
+\[2, 2, 4, 6]
+
+[Set Comprehension]
+doubles = {(x \times 2) for x in numbers}
+print(doubles)
+{2, 2, 4, 6}
+
+### Evens 
+
+[Filter]
+evens = filter(lambda x: x%2==0, numbers)
+print(evens)
+\[2]
+
+[Set Comprehension]
+evens = \[x in numbers if (x%2==0)]
+print(evens)
+\[2]
+
+[List Comprehension]
+evens = {x in numbers if (x%2==0)}
+print(evens)
+{2}
 
 ---
 
